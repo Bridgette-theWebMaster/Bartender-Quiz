@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang= en>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Bartender's Booze Quiz</title>
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <main class="container">
+        <header class= "header">
+           <section>
+                <img class= "boozeHeader" src="images/boozeBanner.jpg" alt="bottles of alcohol"/>
+            </section>
+            <section>
+                <ul>
+                    <li class= "bookmark">Question:
+                        <span class="questionNum">0</span>/5</li>
+                    <li class= "bookmark">Shots:
+                        <span class= "shots">5</span>
+                    </li>
+                </ul>
+            </section>
+        </header>
+        <section class= "theBar">
+            <section class= "beginQuiz box">
+                <h1>How much do you know about spirits?</h1>
+                <button type="button" class= "startButton button" id= "startButton">Begin</button>
+            </section>
+            <section class= "questionBox box altBox"></section>
+            <section class= "response box altBox"></section>
+            <section class= "final box altBox"></section>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="store.js"></script>
+  <script src="index.js"></script>
+  
+</body>
+</html>
