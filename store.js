@@ -1,6 +1,6 @@
 const STORE = [//1
     {
-        question: "What is this glass called? <img src='images/glassware.jpg' alt= 'glassware' width='150px'>",
+        question: "What is this glass called? <img src='glassware.jpg' alt= 'glassware' width='150px'>",
         answer: [
             "Margarita glass",
             "Snifter Glass",
