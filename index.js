@@ -116,11 +116,11 @@ function displayResults(){
     let array = "";
     const pass = [
         "You really know your booze",
-        "images/correctAnswer.jpg"
+        "correctAnswer.jpg"
     ];
     const fail = [
         "At least you kinda tried.",
-        "images/wrongAnswer.jpg",
+        "wrongAnswer.jpg",
         "Take ${shots} for your sort effort"
     ];
     if (shots > 2){
