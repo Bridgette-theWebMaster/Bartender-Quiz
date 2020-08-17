@@ -9,7 +9,6 @@ function startQuiz() {
     $('.altBox').hide();
     $('.beginQuiz').on('click', '.startButton', function (event){
         $('.startButton').hide();
-        $('.final').hide();
         $('.questionNum').text(1);
         $('.questionBox').show();
         $('.questionBox').prepend(renderQuestions());
@@ -104,6 +103,13 @@ function nextQuestion(){
     });
 }
 
+// check progression throughout the quiz
+function quizProgession(){
+  $('body').on('click','.nextButton', (event) => {
+    STORE.currentQuestion === STORE.questions.length?displayResults() : renderQuestions();
+  });
+}
+
 // display results
 function displayResults(){
     $('.final').show();
@@ -143,7 +149,6 @@ function restartQuiz(){
 function handleQuizApp() {
     startQuiz();
     renderQuestions();
-    displayResults();
     restartQuiz();
 }
 
