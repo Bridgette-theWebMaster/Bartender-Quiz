@@ -1,5 +1,5 @@
 'use strict';
-//definin a few variables
+//defining a few variables
 let shots = 5;
 let questionNum = 0;
 
@@ -118,11 +118,11 @@ function finalScore() {
     let array = [];
     const pass = [
         "You really know your booze",
-        "images/correctAnswer.jpg"
+        "correctAnswer.jpg"
     ];
     const fail = [
         "At least you kinda tried.",
-        "images/wrongAnswer.jpg"
+        "wrongAnswer.jpg"
     ];
     if (shots > 3){
         array = fail;
