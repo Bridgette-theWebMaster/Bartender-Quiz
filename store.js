@@ -6,7 +6,7 @@ const STORE = [//1
             "Snifter Glass",
             "Nick and Nora Glass",
             "Coupe Glass"],
-        correctAnswer: "Snift Glass"
+        correctAnswer: "Snifter Glass"
     },
     //2
     {
@@ -28,7 +28,7 @@ const STORE = [//1
             "Stir the cocktail then serve with ice",
             "Serve the cocktail in a martini glass without ice",
         ],
-        CorrectAnswer:"Serve the cocktail in a martini glass without ice"
+        correctAnswer:"Serve the cocktail in a martini glass without ice"
     },
     //4
     {
