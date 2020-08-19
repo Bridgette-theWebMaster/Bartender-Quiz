@@ -44,7 +44,7 @@ body{
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    margin: auto;
+    margin: 20px;
     padding: 20px;
     border: 1px rgba(0, 0, 0) dotted;
     background-color: rgba(37, 37, 37, 0.644);
@@ -94,6 +94,10 @@ legend{
     }
     .theBar{
         width: 95%;
+    }
+    
+    .box{
+        margin: 50px;
     }
 
     .questionBox{
