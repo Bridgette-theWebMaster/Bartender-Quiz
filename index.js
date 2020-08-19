@@ -2,6 +2,7 @@
 //defining a few variables
 let shots = 5;
 let questionNum = 0;
+let trackScore = 0;
 
 // when the user clicks the begin button start the quiz
 function startQuiz() {
@@ -29,6 +30,7 @@ function renderQuestion() {
 //update question
 function updateScore() {
   shots--;
+  trackScore++;
   $('.shots').text(shots);
 }
 function updateQuestionNumber() {
@@ -132,7 +134,8 @@ function finalScore() {
     return $('.final').html(`
         <h3>${array[0]}</h3>
             <img src= "${array[1]}"class= "images">
-            <h3>Take ${shots} / 5 shot(s) for your effort.</h3>
+            <h3>Take ${shots} shot(s) for your effort.</h3></br>
+            <p> Your score: ${trackScore} / 5</p>
             <button type= "submit" class= "restartButton button">Restart</button>
     `)
 }
