@@ -44,7 +44,6 @@ function resetQuiz() {
   trackCorrect = 0;
   $('.shots').text(0);
   $('.questionNum').text(0);
-  startQuiz();
 }
 
 
