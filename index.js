@@ -41,7 +41,7 @@ function updateQuestionNumber() {
 function resetQuiz() {
   shots = 5;
   questionNum = 0;
-  trackScore = 0;
+  trackCorrect = 0;
   $('.shots').text(0);
   $('.questionNum').text(0);
 }
