@@ -40,7 +40,8 @@ function updateQuestionNumber() {
 // reset question number and shots to be taken
 function resetQuiz() {
   shots = 5;
-  questionNumber = 0;
+  questionNum = 0;
+  trackScore = 0;
   $('.shots').text(0);
   $('.questionNum').text(0);
 }
