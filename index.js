@@ -44,6 +44,7 @@ function resetQuiz() {
   trackCorrect = 0;
   $('.shots').text(0);
   $('.questionNum').text(0);
+  startQuiz();
 }
 
 
@@ -120,11 +121,11 @@ function finalScore() {
     let array = [];
     const pass = [
         "You really know your booze",
-        "images/correctAnswer.jpg"
+        "correctAnswer.jpg"
     ];
     const fail = [
         "At least you kinda tried.",
-        "images/wrongAnswer.jpg"
+        "wrongAnswer.jpg"
     ];
     if (shots > 3){
         array = fail;
