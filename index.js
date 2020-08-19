@@ -1,8 +1,7 @@
-'use strict';
-//defining a few variables
+//variables to store the quiz score and question number information
 let shots = 5;
 let questionNum = 0;
-let trackScore = 0;
+let trackCorrect = 0;
 
 // when the user clicks the begin button start the quiz
 function startQuiz() {
@@ -30,7 +29,7 @@ function renderQuestion() {
 //update question
 function updateScore() {
   shots--;
-  trackScore++;
+  trackCorrect ++;
   $('.shots').text(shots);
 }
 function updateQuestionNumber() {
@@ -119,12 +118,12 @@ function finalScore() {
   $('.final').show();
     let array = [];
     const pass = [
-        "You really know your booze.",
-        "correctAnswer.jpg"
+        "You really know your booze",
+        "images/correctAnswer.jpg"
     ];
     const fail = [
         "At least you kinda tried.",
-        "wrongAnswer.jpg"
+        "images/wrongAnswer.jpg"
     ];
     if (shots > 3){
         array = fail;
@@ -135,7 +134,7 @@ function finalScore() {
         <h3>${array[0]}</h3>
             <img src= "${array[1]}"class= "images">
             <h3>Take ${shots} shot(s) for your effort.</h3></br>
-            <p> Your score: ${trackScore} / 5</p>
+            <p> Your score ${trackCorrect} / 5</p>
             <button type= "submit" class= "restartButton button">Restart</button>
     `)
 }
