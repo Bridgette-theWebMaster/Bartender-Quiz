@@ -117,7 +117,7 @@ function finalScore() {
   $('.final').show();
     let array = [];
     const pass = [
-        "You really know your booze",
+        "You really know your booze.",
         "correctAnswer.jpg"
     ];
     const fail = [
@@ -132,8 +132,8 @@ function finalScore() {
     return $('.final').html(`
         <h3>${array[0]}</h3>
             <img src= "${array[1]}"class= "images">
-            <h3>Take ${shots} shots for your effort.</h3>
-            <button type= "submit" class= "restartButton button>Restart</button>
+            <h3>Take ${shots} / 5 shot(s) for your effort.</h3>
+            <button type= "submit" class= "restartButton button">Restart</button>
     `)
 }
 
@@ -143,7 +143,7 @@ function restartQuiz() {
     event.preventDefault();
     resetQuiz();
     $('.altBox').hide();
-    $('.startQuiz').show();
+    $('.beginQuiz').show();
   });
 }
 
